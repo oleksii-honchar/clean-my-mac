@@ -38,6 +38,10 @@ export type ScanItem = {
   modifiedAt: string;
   type: ScanItemType;
   riskLevel: RiskLevel;
+  safeToDelete: boolean;
+  parentTargetPath?: string;
+  appInstalled?: boolean; // Whether the associated app is currently installed
+  matchedAppName?: string; // Name of the matched app (if found)
 };
 
 export type SkippedItem = {
