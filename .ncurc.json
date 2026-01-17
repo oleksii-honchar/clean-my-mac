@@ -1,0 +1,6 @@
+{
+  "reject": [
+    "@tsconfig/node24",
+    "@types/node"
+  ]
+}

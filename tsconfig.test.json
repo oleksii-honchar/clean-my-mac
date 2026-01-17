@@ -1,0 +1,35 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "isolatedModules": true,
+    "types": [
+      "node",
+      "jest"
+    ],
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ],
+      "package.json": [
+        "./package.json"
+      ],
+      "@types/*": [
+        "./src/types/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.test.ts",
+    "jest.setup.ts"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./dist",
+    "./docs",
+    "./coverage",
+    "./ops",
+    "./scripts"
+  ]
+}
